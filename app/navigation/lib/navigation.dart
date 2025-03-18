@@ -1,0 +1,10 @@
+export 'src/navigation/main_navigation.dart';
+export 'src/navigation/impl/main_nav_impl.dart';
+export 'src/utils/route_utils.dart';
+export 'src/observer/app_observer.dart';
+export 'src/app_router.dart';
+export 'src/utils/app_router_utils.dart';
+export 'src/utils/navigation_utils.dart';
+export 'src/routes/main_routes.dart';
+export 'src/di/init.dart';
+export 'src/di/init.module.dart';

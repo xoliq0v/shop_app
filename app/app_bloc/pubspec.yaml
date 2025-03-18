@@ -1,0 +1,30 @@
+name: app_bloc
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  bloc_concurrency: 0.2.5
+  core:
+    path: ../../domain/core
+  use_case:
+    path: ../../domain/use_case
+  model:
+    path: ../../domain/model
+  repository:
+    path: ../../domain/repository
+  flutter_bloc: 8.1.5
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  build_runner: 2.4.10
+  flutter_test:
+    sdk: flutter
+  freezed: 2.5.2
+  flutter_lints: ^4.0.0
+  injectable_generator: 2.6.1

@@ -1,0 +1,61 @@
+name: design_system
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  cached_network_image: 3.3.1
+  core:
+    path: ../../domain/core
+  navigation:
+    path: ../navigation
+  model:
+    path: ../../domain/model
+  easy_refresh: 3.4.0
+  expandable_page_view: 1.0.17
+  flash: 3.1.1
+  flutter:
+    sdk: flutter
+  flutter_animate: 4.5.0
+  flutter_keyboard_visibility: 6.0.0
+  flutter_screenutil: 5.9.3
+  flutter_staggered_grid_view: ^0.7.0
+  flutter_svg: 2.0.10+1
+  modal_bottom_sheet: 3.0.0
+  pinput: 5.0.0
+  shimmer: 3.0.0
+  sliver_tools: 0.2.12
+  slider_button: 2.1.0
+  fl_chart: 0.69.0
+  audioplayers: 6.1.0
+  carousel_slider: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  very_good_analysis: 5.1.0
+
+flutter:
+  assets:
+    - assets/
+
+#  fonts:
+#    - family: Rubik
+#      fonts:
+#        - asset: fonts/Rubik-Light.ttf
+#          weight: 300
+#        - asset: fonts/Rubik-Regular.ttf
+#          weight: 400
+#        - asset: fonts/Rubik-Medium.ttf
+#          weight: 500
+#        - asset: fonts/Rubik-SemiBold.ttf
+#          weight: 600
+#        - asset: fonts/Rubik-Bold.ttf
+#          weight: 700
+#        - asset: fonts/Rubik-ExtraBold.ttf
+#          weight: 800
