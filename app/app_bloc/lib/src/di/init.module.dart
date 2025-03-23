@@ -7,9 +7,10 @@
 import 'dart:async' as _i2;
 
 import 'package:app_bloc/app_bloc.dart' as _i3;
-import 'package:app_bloc/src/di/init.dart' as _i5;
+import 'package:app_bloc/src/di/init.dart' as _i6;
 import 'package:core/core.dart' as _i4;
 import 'package:injectable/injectable.dart' as _i1;
+import 'package:use_case/use_case.dart' as _i5;
 
 class AppBlocPackageModule extends _i1.MicroPackageModule {
 // initializes the registration of main-scope dependencies inside of GetIt
@@ -21,7 +22,9 @@ class AppBlocPackageModule extends _i1.MicroPackageModule {
               gh<_i4.Connectivity>(),
               gh<_i4.InternetConnectionChecker>(),
             ));
+    gh.factory<_i3.ProductCubit>(
+        () => appBlocModule.provideProductCubit(gh<_i5.FetchProduct>()));
   }
 }
 
-class _$AppBlocModule extends _i5.AppBlocModule {}
+class _$AppBlocModule extends _i6.AppBlocModule {}

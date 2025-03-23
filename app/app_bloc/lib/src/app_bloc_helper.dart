@@ -7,4 +7,8 @@ mixin AppBlocHelper {
     return GetIt.I.get<InternetConnectivityController>();
   }
 
+  static ProductCubit getProductCubit(){
+    return GetIt.I.get<ProductCubit>();
+  }
+
 }

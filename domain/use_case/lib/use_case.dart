@@ -1,7 +1,2 @@
-library use_case;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/product_use_case.dart';
+export 'src/di/init.module.dart';

@@ -1,4 +1,4 @@
-# melos_managed_dependency_overrides: core,model,navigation,app_bloc,feature_home,repository,use_case
+# melos_managed_dependency_overrides: core,model,navigation,app_bloc,feature_home,repository,use_case,network
 dependency_overrides:
   app_bloc:
     path: ../app_bloc
@@ -10,6 +10,8 @@ dependency_overrides:
     path: ../../domain/model
   navigation:
     path: ../navigation
+  network:
+    path: ../../data/network
   repository:
     path: ../../domain/repository
   use_case:

@@ -34,7 +34,7 @@ abstract class $FeatureHomeModule extends _i7.AutoRouterModule {
     HomeRoute.name: (routeData) {
       return _i7.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i3.HomePage(),
+        child: _i7.WrappedRoute(child: const _i3.HomePage()),
       );
     },
     MainRoute.name: (routeData) {

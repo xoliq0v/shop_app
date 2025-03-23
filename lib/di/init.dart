@@ -1,7 +1,10 @@
 import 'package:app_bloc/app_bloc.dart';
 import 'package:navigation/navigation.dart';
 import 'package:core/core.dart';
+import 'package:network/network.dart';
+import 'package:repository/repository.dart';
 import 'package:shop_app/di/init.config.dart';
+import 'package:use_case/use_case.dart';
 
 final getIt = GetIt.instance;
 
@@ -9,14 +12,11 @@ final getIt = GetIt.instance;
   externalPackageModulesBefore: [
     ExternalModule(CorePackageModule),
     ExternalModule(NavigationPackageModule),
-    // ExternalModule(DatabasePackageModule),
-    // ExternalModule(NetworkPackageModule),
-    // ExternalModule(MapServicePackageModule),
-    // ExternalModule(FirebaseEcoPackageModule),
+    ExternalModule(NetworkPackageModule),
   ],
   externalPackageModulesAfter: [
-    // ExternalModule(RepositoryPackageModule),
-    // ExternalModule(UseCasePackageModule),
+    ExternalModule(UseCasePackageModule),
+    ExternalModule(RepositoryPackageModule),
     ExternalModule(AppBlocPackageModule),
   ],
 )

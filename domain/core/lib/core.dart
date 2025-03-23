@@ -15,3 +15,7 @@ export 'package:flash/flash_helper.dart';
 export 'src/di/init.dart';
 export 'src/di/init.module.dart';
 export 'src/env/env.dart';
+export 'src/network_config/app_error.dart';
+export 'src/network_config/base_model.dart';
+export 'src/network_config/base_model_error.dart';
+export 'src/network_config/result_mapping.dart';

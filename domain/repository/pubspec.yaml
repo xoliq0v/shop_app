@@ -8,13 +8,23 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  core:
+    path: ../core
+  network:
+    path: ../../data/network
+  model:
+    path: ../model
   flutter:
     sdk: flutter
 
 dev_dependencies:
+  build_runner: 2.4.10
   flutter_test:
     sdk: flutter
+  injectable_generator: 2.6.2
   flutter_lints: ^4.0.0
+
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,9 +1,11 @@
-# melos_managed_dependency_overrides: core,model,repository,use_case
+# melos_managed_dependency_overrides: core,model,repository,use_case,network
 dependency_overrides:
   core:
     path: ../../domain/core
   model:
     path: ../../domain/model
+  network:
+    path: ../../data/network
   repository:
     path: ../../domain/repository
   use_case:
