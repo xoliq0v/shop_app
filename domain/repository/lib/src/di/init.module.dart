@@ -9,6 +9,7 @@ import 'dart:async' as _i687;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:network/network.dart' as _i372;
 import 'package:repository/src/di/init.dart' as _i49;
+import 'package:repository/src/repository/banner_repo.dart' as _i424;
 import 'package:repository/src/repository/product_repo.dart' as _i352;
 
 class RepositoryPackageModule extends _i526.MicroPackageModule {
@@ -18,6 +19,8 @@ class RepositoryPackageModule extends _i526.MicroPackageModule {
     final repositoryModule = _$RepositoryModule();
     gh.lazySingleton<_i352.ProductRepo>(
         () => repositoryModule.provideProductRepo(gh<_i372.ProductProvider>()));
+    gh.lazySingleton<_i424.BannerRepo>(
+        () => repositoryModule.provideBannerRepo(gh<_i372.BannerProvider>()));
   }
 }
 

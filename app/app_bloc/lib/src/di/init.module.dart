@@ -24,6 +24,8 @@ class AppBlocPackageModule extends _i1.MicroPackageModule {
             ));
     gh.factory<_i3.ProductCubit>(
         () => appBlocModule.provideProductCubit(gh<_i5.FetchProduct>()));
+    gh.factory<_i3.BannerCubit>(
+        () => appBlocModule.provideBannerCubit(gh<_i5.FetchBanner>()));
   }
 }
 

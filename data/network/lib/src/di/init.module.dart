@@ -36,6 +36,8 @@ class NetworkPackageModule extends _i526.MicroPackageModule {
         ));
     gh.lazySingleton<_i372.ProductProvider>(
         () => networkProviderModule.provideProductProvider(gh<_i361.Dio>()));
+    gh.lazySingleton<_i372.BannerProvider>(
+        () => networkProviderModule.provideBannerProvider(gh<_i361.Dio>()));
   }
 }
 

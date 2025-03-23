@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:app_bloc/app_bloc.dart';
+import 'package:app_bloc/src/bloc/banner/banner_bloc.dart';
 import 'package:core/core.dart';
 import 'package:use_case/use_case.dart';
 
@@ -23,6 +24,14 @@ abstract class AppBlocModule {
       ){
     return ProductCubit(
         fetchProduct,
+    );
+  }
+
+  BannerCubit provideBannerCubit(
+      FetchBanner fetchBanner
+      ){
+    return BannerCubit(
+      fetchBanner,
     );
   }
 

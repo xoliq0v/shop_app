@@ -19,3 +19,4 @@ export 'src/network_config/app_error.dart';
 export 'src/network_config/base_model.dart';
 export 'src/network_config/base_model_error.dart';
 export 'src/network_config/result_mapping.dart';
+export 'package:shimmer/shimmer.dart';

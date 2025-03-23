@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:app_bloc/app_bloc.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +24,9 @@ class HomePage extends StatefulWidget implements AutoRouteWrapper {
         providers: [
           BlocProvider<ProductCubit>(
               create: (context)=> AppBlocHelper.getProductCubit()
+          ),
+          BlocProvider<BannerCubit>(
+              create: (context)=> AppBlocHelper.getBannerCubit()
           ),
         ],
         child: this
@@ -72,7 +77,7 @@ class _HomePageState extends State<HomePage> {
             BlocBuilder<ProductCubit, ProductPaginationState>(
               builder: (context, state) {
                 if (state.isLoadingShimmer) {
-                  return const SliverToBoxAdapter(child: _LoadingView());
+                  return const _LoadingView();
                 } else if (state.error != null) {
                   return const SliverToBoxAdapter(child: ErrorView());
                 }
